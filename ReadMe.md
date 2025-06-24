@@ -1,8 +1,8 @@
-[![CMake workflow](https://github.com/LegalizeAdulthood/utahcpp-project-template/actions/workflows/cmake.yml/badge.svg)](https://github.com/LegalizeAdulthood/utahcpp-project-template/actions/workflows/cmake.yml)
+[![CMake workflow](https://github.com/LegalizeAdulthood/boost-multiprecision-example/actions/workflows/cmake.yml/badge.svg)](https://github.com/LegalizeAdulthood/boost-multiprecision-example/actions/workflows/cmake.yml)
 
-# Project Template
+# Boost.Multiprecision Example
 
-Sample code for the video Project Template.
+Sample code for the video Getting Down in the Bits with Boost.Multiprecision.
 
 # Obtaining the Source
 
@@ -10,8 +10,8 @@ Use git to clone this repository, then update the vcpkg submodule to bootstrap
 the dependency process.
 
 ```
-git clone https://github.com/LegalizeAdulthood/utahcpp-project-template
-cd utahcpp-project-template
+git clone https://github.com/LegalizeAdulthood/boost-multiprecision-example
+cd boost-multiprecision-example
 git submodule init
 git submodule update --depth 1
 ```
