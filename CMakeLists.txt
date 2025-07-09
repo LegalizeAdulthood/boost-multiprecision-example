@@ -13,6 +13,7 @@ project("${BMP_EXAMPLE_PROJECT_NAME}" CXX)
 
 include(CTest)
 
+add_subdirectory(examples)
 add_subdirectory(libs)
 add_subdirectory(tools)
 
