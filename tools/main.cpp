@@ -38,10 +38,10 @@ void zoom(Complex center, bool pause, int &max_iter, Value &magnification)
 {
     int width{32};
     int height{32};
-    Value last_mag{.0};
+    Value last_mag{0.0};
     std::string dummy;
     using std::abs;
-    while (abs(magnification - last_mag) > std::numeric_limits<Value>::epsilon() * Value(10))
+    while (abs(magnification - last_mag) > std::numeric_limits<Value>::epsilon() * 10.0)
     {
         zoomer::Image img{zoomer::plot(center, magnification, max_iter, width, height)};
         std::cout << max_iter << ' ' << magnification << '\n';
@@ -50,7 +50,7 @@ void zoom(Complex center, bool pause, int &max_iter, Value &magnification)
             max_iter *= 2;
         }
         last_mag = magnification;
-        magnification /= Value(2.0);
+        magnification /= 2.0;
         if (pause)
         {
             std::getline(std::cin, dummy);

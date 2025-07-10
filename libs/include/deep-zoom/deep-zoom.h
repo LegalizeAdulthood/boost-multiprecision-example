@@ -44,7 +44,7 @@ template <typename Complex, typename Value = typename Complex::value_type>
 static bool bailout(const Complex &z)
 {
     using std::norm;
-    return norm(z) > Value(4.0);
+    return norm(z) > 4.0;
 }
 
 template <typename Complex>
@@ -59,10 +59,10 @@ template <typename Complex, typename Value = typename Complex::value_type>
 Image plot(Complex center, Value magnification, int max_iter, int width, int height)
 {
     Image result{width, height};
-    const Value left{center.real() - magnification / Value(2.0)};
-    const Value bottom{center.imag() - magnification / Value(2.0)};
-    const Value dr{magnification / static_cast<Value>(width)};
-    const Value di{magnification / static_cast<Value>(height)};
+    const Value left{center.real() - magnification / 2.0};
+    const Value bottom{center.imag() - magnification / 2.0};
+    const Value dr{magnification / width};
+    const Value di{magnification / height};
 
     Value im{bottom};
     for (int y = 0; y < height; ++y)
