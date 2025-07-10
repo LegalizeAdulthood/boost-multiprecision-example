@@ -2,7 +2,7 @@
 
 # Boost.Multiprecision Example
 
-Sample code for the video Getting Down in the Bits with Boost.Multiprecision.
+Sample code for the video [Getting Down in the Bits with Boost.Multiprecision](https://www.youtube.com/watch?v=mK4WjpvLj4c).
 
 # Obtaining the Source
 
